@@ -92,7 +92,7 @@ spec:
                         "port_groups": [
                             {
                                 "name": "VM Network 16",
-                                "vlan_id": 0
+                                "vlan_id": 121
                             }
                         ]
                     }
