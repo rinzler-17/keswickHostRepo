@@ -5,5 +5,5 @@ metadata:
 spec:
   controllerName: vmoperator.vmware.com/esxi
   hardware:
-    cpus: 1
-    memory: 2Gi
+    cpus: 2
+    memory: 4Gi
