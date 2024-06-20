@@ -1,0 +1,9 @@
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachineClass
+metadata:
+  name: small
+spec:
+  controllerName: vmoperator.vmware.com/esxi
+  hardware:
+    cpus: 1
+    memory: 2Gi
