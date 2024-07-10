@@ -12,6 +12,9 @@ spec:
   vmMetadata:
     configMapName: user-data-7
     transport: ExtraConfig
+  networkInterfaces:
+    - networkName: "VM Network"
+      ethernetCardType: "vmxnet3"
 ---
 apiVersion: v1
 kind: ConfigMap
