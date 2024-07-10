@@ -20,7 +20,7 @@ spec:
                                 "rolling_order": false,
                                 "link_criteria_beacon": "IGNORE",
                                 "active_nics": [
-                                    "vmnic1"
+                                    "vmnic0"
                                 ],
                                 "standby_nics": []
                             },
