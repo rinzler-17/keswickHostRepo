@@ -12,7 +12,7 @@ spec:
             "network_vss": {
                 "switches": [
                     {
-                        "name": "vSwitch1",
+                        "name": "vSwitch0",
                         "policy": {
                             "security": {
                                 "allow_promiscuous": true,
@@ -35,6 +35,18 @@ spec:
                         "num_ports": 1024,
                         "mtu": 1500,
                         "port_groups": [
+                            {
+                                "name": "Test",
+                                "vlan_id": 0
+                            },
+                            {
+                                "name": "VM Network",
+                                "vlan_id": 0
+                            },
+                            {
+                                "name": "Management Network",
+                                "vlan_id": 0
+                            },
                             {
                                 "name": "VM Network 16",
                                 "vlan_id": 0
