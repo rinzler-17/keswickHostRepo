@@ -14,16 +14,6 @@ spec:
                     {
                         "name": "vSwitch1",
                         "policy": {
-                            "nic_teaming": {
-                                "policy": "LOADBALANCE_SRCID",
-                                "notify_switches": true,
-                                "rolling_order": false,
-                                "link_criteria_beacon": "IGNORE",
-                                "active_nics": [
-                                    "vmnic0"
-                                ],
-                                "standby_nics": []
-                            },
                             "security": {
                                 "allow_promiscuous": true,
                                 "mac_changes": false,
