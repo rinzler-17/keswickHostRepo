@@ -12,7 +12,7 @@ spec:
             "network_vss": {
                 "switches": [
                     {
-                        "name": "vSwitch0",
+                        "name": "vSwitch2",
                         "policy": {
                             "security": {
                                 "allow_promiscuous": true,
@@ -23,28 +23,11 @@ spec:
                                 "enabled": false
                             }
                         },
-                        "bridge": {
-                            "link_discovery_protocol": {
-                                "protocol": "CDP",
-                                "operation": "LISTEN"
-                            },
-                            "nics": [
-                                "vmnic0"
-                            ]
-                        },
                         "num_ports": 1024,
                         "mtu": 1500,
                         "port_groups": [
                             {
-                                "name": "Test",
-                                "vlan_id": 0
-                            },
-                            {
-                                "name": "VM Network",
-                                "vlan_id": 0
-                            },
-                            {
-                                "name": "Management Network",
+                                "name": "VM Network 15",
                                 "vlan_id": 0
                             },
                             {
