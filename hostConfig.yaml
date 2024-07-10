@@ -12,29 +12,63 @@ spec:
             "network_vss": {
                 "switches": [
                     {
-                        "name": "vSwitch2",
-                        "policy": {
-                            "security": {
-                                "allow_promiscuous": true,
-                                "mac_changes": false,
-                                "forged_transmits": false
+                        "name": "vSwitch0",
+                        "bridge": {
+                            "link_discovery_protocol": {
+                                "protocol": "CDP",
+                                "operation": "LISTEN"
                             },
-                            "traffic_shaping": {
-                                "enabled": false
-                            }
+                            "nics": [
+                                "vmnic0"
+                            ]
                         },
-                        "num_ports": 1024,
-                        "mtu": 1500,
                         "port_groups": [
                             {
-                                "name": "VM Network 15",
+                                "name": "Management Network",
+                                "vlan_id": 0,
+                                "policy": {
+                                    "nic_teaming": {
+                                        "policy": "LOADBALANCE_SRCID",
+                                        "notify_switches": true,
+                                        "rolling_order": false,
+                                        "link_criteria_beacon": "IGNORE",
+                                        "active_nics": [
+                                            "vmnic0"
+                                        ],
+                                        "standby_nics": []
+                                    }
+                                }
+                            },
+                            {
+                                "name": "VM Network",
+                                "vlan_id": 0
+                            },
+                            {
+                                "name": "Test",
                                 "vlan_id": 0
                             },
                             {
                                 "name": "VM Network 16",
                                 "vlan_id": 0
                             }
-                        ]
+                        ],
+                        "policy": {
+                            "nic_teaming": {
+                                "policy": "LOADBALANCE_SRCID",
+                                "notify_switches": true,
+                                "rolling_order": false,
+                                "link_criteria_beacon": "IGNORE",
+                                "active_nics": [
+                                    "vmnic0"
+                                ],
+                                "standby_nics": []
+                            },
+                            "security": {
+                                "allow_promiscuous": true,
+                                "mac_changes": false,
+                                "forged_transmits": true
+                            }
+                        }
                     }
                 ]
             }
