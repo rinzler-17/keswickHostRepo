@@ -7,7 +7,7 @@ spec:
     _typeName: VirtualMachineConfigSpec
     latencySensitivity:
       _typeName: LatencySensitivity 
-      level: high
+      level: low
     flags:
       _typeName: VirtualMachineFlagInfo
     #  vbsEnabled: true
