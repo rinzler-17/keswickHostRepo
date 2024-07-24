@@ -1,0 +1,30 @@
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachineClass
+metadata:
+  name: vbs-vm-class
+spec:
+  configSpec:
+    _typeName: VirtualMachineConfigSpec
+    latencySensitivity:
+      _typeName: LatencySensitivity 
+      level: high
+    flags:
+      _typeName: VirtualMachineFlagInfo
+    #  vbsEnabled: true
+      virtualMmuUsage: "on"
+    #  vvtdEnabled: true
+    #nestedHVEnabled: true
+    #bootOptions:
+    #  _typeName: VirtualMachineBootOptions
+    #  efiSecureBootEnabled: true  # required vm hardware version for secure boot >= vmx-13
+  policies:
+      resources:
+        requests:
+          memory: 3Gi   # The memory reservation must be equal to the VM memory for latency sensitivity.
+  hardware:
+    cpus: 2
+    memory: 3Gi
+    #devices:
+    #  dynamicDirectPathIODevices:
+    #  - vendorID: 0x14e4
+    #    deviceID: 0x165f
