@@ -21,6 +21,7 @@ spec:
       resources:
         requests:
           memory: 3Gi   # The memory reservation must be equal to the VM memory for latency sensitivity.
+          cpu: 2
   hardware:
     cpus: 2
     memory: 3Gi
