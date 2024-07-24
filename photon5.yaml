@@ -10,7 +10,7 @@ metadata:
 spec:
   className: vbs-vm-class
   imageName: packages.vmware.com/photon/5.0/GA/ova/photon-hw15-5.0-dde71ec57.x86_64.ova
-  powerState: poweredOn
+  powerState: poweredOff
   vmMetadata:
     configMapName: user-data-3
     transport: CloudInit
