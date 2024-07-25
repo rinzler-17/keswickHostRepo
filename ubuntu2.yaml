@@ -6,7 +6,7 @@ metadata:
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
 spec:
-  className: small
+  className: vbs-vm-class
   imageName: cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.ova
   powerState: poweredOn
   vmMetadata:
