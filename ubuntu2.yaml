@@ -5,6 +5,7 @@ metadata:
   namespace: default
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
+    vmoperator.vmware.com/pause-reconcile: true
 spec:
   className: vbs-vm-class
   imageName: cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.ova
