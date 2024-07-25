@@ -20,11 +20,11 @@ spec:
   policies:
       resources:
         requests:
-          memory: 3Gi   # The memory reservation must be equal to the VM memory for latency sensitivity.
-          cpu: 2
+          memory: 4Gi   # The memory reservation must be equal to the VM memory for latency sensitivity.
+          cpu: 3
   hardware:
-    cpus: 2
-    memory: 3Gi
+    cpus: 3
+    memory: 4Gi
     #devices:
     #  dynamicDirectPathIODevices:
     #  - vendorID: 0x14e4
