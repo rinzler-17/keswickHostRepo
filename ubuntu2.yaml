@@ -8,7 +8,7 @@ metadata:
 spec:
   className: vbs-vm-class
   imageName: cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.ova
-  powerState: poweredOff
+  powerState: poweredOn
   vmMetadata:
     configMapName: user-data-2
     transport: ExtraConfig
