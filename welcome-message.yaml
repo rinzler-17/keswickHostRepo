@@ -1,7 +1,7 @@
 apiVersion: esx.vmware.com/v1alpha1
 kind: HostConfiguration
 metadata:
-  name: welcome-message
+  name: welcome-message-2
   namespace: esx-system
 spec:
   layertype: Incremental
