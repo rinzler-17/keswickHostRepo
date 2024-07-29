@@ -1,3 +1,4 @@
+#Change the DCUI Welcome message
 apiVersion: esx.vmware.com/v1alpha1
 kind: HostConfiguration
 metadata:
@@ -9,9 +10,8 @@ spec:
     {
       "esx": {
           "system": {
-            "welcome_message":
-              {
-              "message": "\{align:center}\n\n\n\n VMware Edge Cloud Orchestrator - Edge Host{/color}{/align}\n\n\n\n\n\n\n\n\n{align:center}No Unauthorized Access{/color}{/align}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{align:center} For access contact Alan Renouf on 555 555-5555{/color}{/align}"
+            "welcome_message": {
+                "message": "{align:center}{color:white} \n\n\n\n VMware Edge Cloud Orchestrator - Edge Host{/color}{/align}\n\n\n\n\n\n\n\n\n{align:center}{color:red}No Unauthorized Access{/color}{/align}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{align:center}{color:yellow} For access contact Alan Renouf on 555 555-5555{/color}{/align}"
             }
           }
       }
