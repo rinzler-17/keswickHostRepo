@@ -1,4 +1,3 @@
-#Example host configuration adding a new vSwitch and portgroup and assigning them to vmnic1
 apiVersion: esx.vmware.com/v1alpha1
 kind: HostConfiguration
 metadata:
@@ -65,7 +64,7 @@ spec:
                                 "rolling_order": false,
                                 "link_criteria_beacon": "IGNORE",
                                 "active_nics": [
-                                    "vmnic1"
+                                    "vmnic0"
                                 ],
                                 "standby_nics": []
                             },
