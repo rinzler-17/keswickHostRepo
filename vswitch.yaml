@@ -35,7 +35,7 @@ spec:
                                 }
                             },
                             {
-                                "name": "VM Network",
+                                "name": "VM Network 16",
                                 "vlan_id": 0
                             }
                         ],
@@ -55,9 +55,7 @@ spec:
                             }
                         }
                     }
-                        ]
-                    }
-                ]
+                  ]
+                }
+              }
             }
-        }
-    }
